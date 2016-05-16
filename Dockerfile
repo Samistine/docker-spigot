@@ -3,10 +3,7 @@ FROM nimmis/java:openjdk-8-jdk
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
 #default directory for SPIGOT-server
-ENV SPIGOT_HOME /minecraft
-
-#default version 
-ENV SPIGOT_VER latest
+ENV MINECRAFT_HOME /minecraft
 
 # add extra files needed
 COPY rootfs /
