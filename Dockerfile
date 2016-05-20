@@ -2,6 +2,9 @@ FROM nimmis/java:openjdk-8-jdk
 
 MAINTAINER Samuel Seidel <samuel@samistine.com>
 
+# Fix timezone
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Java options for Minecraft server
 ENV MC_JAVA_OPS '-Xmx1G -Xms1G'
 
