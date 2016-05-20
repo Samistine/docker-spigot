@@ -2,6 +2,9 @@ FROM nimmis/java:openjdk-8-jdk
 
 MAINTAINER Samuel Seidel <samuel@samistine.com>
 
+# Default TimeZone
+ENV TZ America/New_York
+
 # Fix timezone
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
