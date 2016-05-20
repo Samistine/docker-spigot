@@ -14,9 +14,9 @@
 # (c) 2015-2016 nimmis <kjell.havneskold@gmail.com>
 #
 
-MC_USER = minecraft
-MC_DIR = /minecraft
-MC_PROC = minecraft.jar
+MC_USER=minecraft
+MC_DIR=/minecraft
+MC_PROC=minecraft.jar
 
 JAVACMD=$(which java)
 
